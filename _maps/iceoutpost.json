@@ -1,0 +1,11 @@
+{
+    "map_name": "Ice Outpost 1",
+    "map_path": "map_files/IceOutpost1",
+    "map_file": "DeltaStation2.dmm",
+    "shuttles": {
+	    "emergency": "emergency_delta",
+	    "ferry": "ferry_fancy",
+	    "cargo": "cargo_delta",
+	    "whiteship": "whiteship_delta"
+    }
+}
