@@ -1,6 +1,13 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aaa" = (
-/turf/open/space/basic,
+/obj/structure/cable/white{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/white{
+	icon_state = "0-8"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
 /area/space)
 "aab" = (
 /obj/effect/landmark/carpspawn,
@@ -12,9 +19,14 @@
 /turf/open/space,
 /area/space/nearstation)
 "aad" = (
-/obj/structure/lattice,
-/turf/open/space,
-/area/space/nearstation)
+/obj/structure/cable/white{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/white{
+	icon_state = "0-2"
+	},
+/turf/closed/wall,
+/area/space)
 "aae" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable{
@@ -29648,7 +29660,6 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clipboard,
-/obj/item/toy/figure/miner,
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = -24
@@ -29698,19 +29709,15 @@
 /area/quartermaster/miningoffice)
 "bcE" = (
 /obj/structure/table,
-/obj/machinery/microwave{
-	desc = "Cooks and boils stuff, somehow.";
-	pixel_x = -3;
-	pixel_y = 5
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
+/obj/item/gps/mining,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bcF" = (
 /obj/structure/table,
-/obj/item/storage/box/donkpockets,
 /obj/effect/turf_decal/bot,
+/obj/item/toy/figure/miner,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bcG" = (
@@ -30679,18 +30686,16 @@
 /obj/structure/cable/white{
 	icon_state = "0-8"
 	},
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/sign/warning/vacuum,
-/turf/open/floor/plating,
+/turf/closed/wall,
 /area/quartermaster/miningoffice)
 "bel" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/white{
+	icon_state = "0-4"
+	},
 /obj/structure/cable/white{
 	icon_state = "0-8"
 	},
-/obj/structure/cable/white{
-	icon_state = "0-2"
-	},
-/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/quartermaster/miningoffice)
 "bep" = (
@@ -31413,34 +31418,54 @@
 /turf/open/floor/plating,
 /area/quartermaster/miningoffice)
 "bfF" = (
-/obj/effect/turf_decal/tile/purple,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bfG" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/sign/warning/pods{
-	name = "MINING POD"
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bfH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ore_box,
-/obj/effect/turf_decal/bot,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bfI" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/emcloset,
-/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bfJ" = (
-/obj/structure/cable/white,
-/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/stairs/west,
 /turf/open/floor/plating,
 /area/quartermaster/miningoffice)
 "bfN" = (
@@ -32037,56 +32062,26 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bgQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/external{
-	name = "Mining Dock Airlock";
-	req_access_txt = "48"
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bgR" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/quartermaster/miningoffice)
+/turf/open/transparent/openspace,
+/area/space)
 "bgS" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
+/obj/structure/railing/corner,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
 	},
-/obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bgT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood/old,
-/obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/door/airlock/external{
-	name = "Mining Dock Airlock";
-	req_access_txt = "48"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
+/obj/structure/stairs/west,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bgU" = (
@@ -32904,36 +32899,40 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bir" = (
-/obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/flashlight/lamp,
 /obj/effect/turf_decal/tile/purple,
-/obj/effect/turf_decal/tile/purple{
-	dir = 4
-	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bis" = (
-/obj/structure/reagent_dispensers/fueltank,
-/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "bit" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/oil,
-/obj/effect/turf_decal/bot,
-/obj/item/stack/ore/silver{
-	amount = 2
+/obj/structure/railing/corner{
+	dir = 4
 	},
-/obj/item/stack/ore/iron,
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "biu" = (
-/obj/structure/cable/white{
-	icon_state = "0-2"
+/obj/structure/railing{
+	dir = 1
 	},
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
 "biy" = (
 /obj/structure/cable/white{
@@ -34031,14 +34030,18 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/item/folder/yellow,
-/obj/item/gps/mining,
+/obj/item/folder/yellow{
+	pixel_x = -5
+	},
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
+	},
+/obj/item/flashlight/lamp{
+	pixel_x = 4
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
@@ -36863,7 +36866,7 @@
 "bpb" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/reagent_dispensers/watertank,
+/obj/machinery/power/deck_relay,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "bpc" = (
@@ -39353,9 +39356,7 @@
 /obj/structure/cable/white{
 	icon_state = "0-4"
 	},
-/obj/structure/cable/white{
-	icon_state = "4-8"
-	},
+/obj/structure/cable/white,
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/security/execution/transfer)
@@ -39371,9 +39372,6 @@
 "bte" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
-	},
-/obj/structure/cable/white{
-	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -42725,24 +42723,16 @@
 /turf/open/floor/plasteel/dark,
 /area/security/nuke_storage)
 "byD" = (
-/obj/machinery/gulag_item_reclaimer{
-	pixel_y = 28
-	},
-/obj/item/kirbyplants/random,
 /obj/structure/cable/white{
-	icon_state = "4-8"
+	icon_state = "0-2"
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/turf/open/floor/plasteel,
-/area/security/execution/transfer)
+/obj/structure/cable/white,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/space)
 "byE" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
-	},
-/obj/structure/cable/white{
-	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
@@ -43712,13 +43702,12 @@
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/security/execution/transfer)
 "bAf" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
+/obj/structure/cable/white,
+/obj/structure/cable/white{
+	icon_state = "0-2"
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
 /area/security/execution/transfer)
 "bAg" = (
 /obj/structure/cable/white{
@@ -46553,14 +46542,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 6
-	},
-/obj/machinery/button/door{
-	desc = "A remote control switch.";
-	id = "gulagdoor";
-	name = "Transfer Door Control";
-	normaldoorcontrol = 1;
-	pixel_x = -24;
-	pixel_y = -8
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
@@ -125329,6 +125310,13 @@
 	},
 /turf/open/floor/plating,
 /area/security/prison)
+"gxx" = (
+/obj/structure/cable/white,
+/obj/structure/cable/white{
+	icon_state = "0-8"
+	},
+/turf/closed/wall,
+/area/space)
 "gKn" = (
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/space/nearstation)
@@ -125616,6 +125604,19 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/science/research)
+"ibR" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/item/kirbyplants/random,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/space)
 "iem" = (
 /obj/machinery/door/poddoor{
 	id = "chapelgun";
@@ -126139,6 +126140,15 @@
 /obj/structure/bodycontainer/morgue,
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
+"kuh" = (
+/obj/structure/cable/white{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/white{
+	icon_state = "0-4"
+	},
+/turf/closed/wall,
+/area/quartermaster/miningoffice)
 "kuj" = (
 /obj/structure/table,
 /obj/machinery/button/door{
@@ -127089,6 +127099,19 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/toxins_mixing_input,
 /turf/open/floor/engine/vacuum,
 /area/science/mixing)
+"qnN" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/space)
 "qpq" = (
 /turf/open/floor/plasteel/white/side{
 	dir = 5
@@ -127840,6 +127863,19 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"wmH" = (
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningoffice)
 "wmL" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -147097,7 +147133,7 @@ bNF
 bgU
 bVZ
 bgU
-aad
+qgU
 car
 cdB
 cdB
@@ -147354,7 +147390,7 @@ bNF
 stP
 bVY
 stP
-aad
+qgU
 car
 car
 car
@@ -147611,7 +147647,7 @@ bNF
 bgU
 bVZ
 bgU
-aad
+qgU
 car
 hVt
 hVt
@@ -157359,10 +157395,10 @@ aMN
 alf
 bqq
 bss
-aaa
-aad
-aaa
-aad
+nph
+qgU
+nph
+qgU
 bxY
 bBj
 bDe
@@ -157616,7 +157652,7 @@ bnd
 alf
 bqr
 bss
-aad
+qgU
 bvv
 bvw
 bxY
@@ -157873,7 +157909,7 @@ alf
 alf
 bqs
 bss
-aaa
+nph
 bvw
 bwJ
 bxZ
@@ -158130,7 +158166,7 @@ ary
 aug
 bqt
 bst
-aad
+qgU
 bvx
 bwK
 bya
@@ -158387,7 +158423,7 @@ alg
 arB
 bqu
 bss
-aaa
+nph
 bvy
 bwL
 byb
@@ -158644,7 +158680,7 @@ alf
 alf
 bqv
 bss
-aad
+qgU
 bvv
 bvy
 bxY
@@ -158901,10 +158937,10 @@ bne
 bbQ
 bqu
 bss
-aaa
-aad
-aaa
-aad
+nph
+qgU
+nph
+qgU
 bzD
 bBo
 bDk
@@ -174313,7 +174349,7 @@ aQR
 bcF
 beh
 bfF
-bfv
+bgP
 bir
 bkd
 bma
@@ -174571,7 +174607,7 @@ bcG
 bei
 bfG
 bgQ
-baU
+wmH
 bke
 bcG
 bkf
@@ -174824,13 +174860,13 @@ aVX
 aXD
 aZh
 aQT
-qgU
-bej
+gKn
+bel
 bfH
-bgR
+bgP
 bis
 bej
-qgU
+gKn
 qgU
 qgU
 qgU
@@ -175086,7 +175122,7 @@ bek
 bfI
 bgS
 bit
-bek
+kuh
 nph
 nph
 nph
@@ -175343,7 +175379,7 @@ bel
 bfJ
 bgT
 biu
-bkf
+bel
 nph
 nph
 nph
@@ -175595,13 +175631,13 @@ aVZ
 aXG
 aZi
 qgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
+nph
+aaa
+bgR
+bgR
+qnN
+aaa
+nph
 nph
 nph
 nph
@@ -175852,13 +175888,13 @@ aWa
 aXH
 aQS
 qgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
+nph
+aaa
+bgR
+bgR
+ibR
+aaa
+nph
 nph
 nph
 nph
@@ -176109,13 +176145,13 @@ aQQ
 aXI
 aZj
 qgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
+nph
+aad
+byD
+byD
+byD
+gxx
+nph
 nph
 nph
 nph
@@ -176366,13 +176402,13 @@ nph
 qgU
 qgU
 qgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
+nph
+nph
+nph
+nph
+nph
+nph
+nph
 nph
 nph
 nph
@@ -176623,13 +176659,13 @@ qgU
 qgU
 nph
 nph
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
-bgU
+nph
+nph
+nph
+nph
+nph
+nph
+nph
 nph
 nph
 nph
@@ -176881,11 +176917,11 @@ qgU
 nph
 nph
 nph
-abj
-abj
-abj
-abj
-abj
+gKn
+gKn
+gKn
+gKn
+gKn
 nph
 qgU
 qgU
@@ -177147,11 +177183,11 @@ qgU
 bnD
 bpc
 bnG
-btc
+bpj
 bAf
 btc
 bnG
-btc
+bpj
 bAf
 btc
 bDV
@@ -177404,11 +177440,11 @@ qgU
 bnE
 bpd
 bre
-btd
+buC
 buC
 bvX
 bnG
-byD
+bpd
 buC
 btd
 bDW
@@ -183805,7 +183841,7 @@ nph
 nph
 nph
 nph
-abj
+gKn
 qhl
 qhl
 aLa
@@ -184062,7 +184098,7 @@ nph
 nph
 nph
 nph
-abj
+gKn
 bgU
 bgU
 aLa
@@ -184319,7 +184355,7 @@ nph
 nph
 nph
 nph
-abj
+gKn
 qhl
 qhl
 aLa
