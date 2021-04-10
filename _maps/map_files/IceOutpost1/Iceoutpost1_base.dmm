@@ -2071,7 +2071,6 @@
 /obj/structure/table/reinforced,
 /obj/item/clipboard,
 /obj/item/folder/yellow,
-/obj/item/assault_pod/mining,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -2191,15 +2190,13 @@
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
 "afG" = (
-/obj/machinery/computer/camera_advanced/base_construction{
-	dir = 8
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/maintenance{
+	lootcount = 2;
+	name = "2maintenance loot spawner"
 	},
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/construction/mining/aux_base)
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "afT" = (
 /obj/structure/chair{
 	dir = 4
@@ -2255,15 +2252,9 @@
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
 "afY" = (
-/obj/machinery/computer/shuttle/mining{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/construction/mining/aux_base)
+/obj/item/clothing/head/cone,
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "agj" = (
 /obj/structure/closet/firecloset,
 /obj/effect/decal/cleanable/dirt,
@@ -8283,6 +8274,7 @@
 /obj/structure/cable/white{
 	icon_state = "2-4"
 	},
+/obj/item/clothing/head/cone,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "asF" = (
@@ -9978,18 +9970,16 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/solar/starboard/fore)
 "avo" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/maintenance{
-	lootcount = 2;
-	name = "2maintenance loot spawner"
-	},
-/turf/open/floor/plating,
+/turf/open/transparent/openspace,
 /area/maintenance/port/fore)
 "avp" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
 /obj/effect/landmark/event_spawn,
+/obj/structure/railing{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "avq" = (
@@ -10489,6 +10479,10 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/structure/ladder,
+/obj/structure/railing{
+	dir = 9
+	},
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
 "awn" = (
@@ -10496,6 +10490,9 @@
 /obj/effect/landmark/blobstart,
 /obj/structure/cable/white{
 	icon_state = "1-2"
+	},
+/obj/structure/railing/corner{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -11258,6 +11255,9 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+	},
+/obj/structure/railing{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
@@ -25233,11 +25233,18 @@
 /turf/open/floor/plasteel/dark,
 /area/security/execution/education)
 "aUK" = (
-/obj/structure/sign/warning/vacuum/external{
-	pixel_x = 32
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
-/turf/open/floor/plating,
-/area/security/prison)
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/item/clothing/head/cone,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/maintenance/port/fore)
 "aUL" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -126683,6 +126690,7 @@
 /area/hydroponics)
 "lqt" = (
 /obj/structure/grille,
+/obj/structure/lattice,
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors)
 "lsa" = (
@@ -126787,19 +126795,11 @@
 	},
 /area/science/circuit)
 "lTo" = (
-/obj/docking_port/stationary{
-	area_type = /area/construction/mining/aux_base;
-	dheight = 4;
-	dir = 4;
-	dwidth = 4;
-	height = 9;
-	id = "aux_base_zone";
-	name = "aux base zone";
-	roundstart_template = /datum/map_template/shuttle/aux_base/default;
-	width = 9
+/obj/structure/railing{
+	dir = 4
 	},
 /turf/open/floor/plating,
-/area/construction/mining/aux_base)
+/area/maintenance/port/fore)
 "lTx" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -127136,6 +127136,12 @@
 /obj/machinery/atmospherics/pipe/manifold/cyan/visible,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/engine/atmos)
+"okk" = (
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "omN" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -127204,11 +127210,12 @@
 /turf/open/floor/plasteel,
 /area/library)
 "oMw" = (
-/obj/docking_port/stationary/public_mining_dock{
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/construction/mining/aux_base)
+/area/maintenance/port/fore)
 "oNd" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -140613,9 +140620,9 @@ qgU
 qgU
 qgU
 qgU
-alC
 qgU
-alC
+qgU
+qgU
 qgU
 qgU
 qgU
@@ -141127,9 +141134,9 @@ qgU
 qgU
 qgU
 qgU
+vUS
 qgU
-qgU
-qgU
+vUS
 qgU
 qgU
 qgU
@@ -142149,9 +142156,9 @@ qgU
 qgU
 qgU
 qgU
-alC
 qgU
 qgU
+vUS
 dGW
 dGW
 dJG
@@ -142161,9 +142168,9 @@ dNp
 dNY
 dGW
 dGW
+vUS
 qgU
 qgU
-alC
 qgU
 qgU
 hZh
@@ -142663,9 +142670,9 @@ qgU
 qgU
 qgU
 qgU
-alC
 qgU
 qgU
+vUS
 dGW
 dGW
 dJI
@@ -142675,9 +142682,9 @@ dNr
 dNZ
 dGW
 dGW
+vUS
 qgU
 qgU
-alC
 qgU
 qgU
 hZh
@@ -143697,9 +143704,9 @@ qgU
 qgU
 qgU
 qgU
-qgU
+vUS
 stP
-qgU
+vUS
 qgU
 qgU
 qgU
@@ -144211,9 +144218,9 @@ qgU
 qgU
 qgU
 qgU
-alC
+qgU
 stP
-alC
+qgU
 qgU
 qgU
 qgU
@@ -145639,13 +145646,13 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+lqt
+lqt
+uCR
+uCR
+uCR
+uCR
 qgU
 qgU
 qgU
@@ -145892,21 +145899,21 @@ qgU
 qgU
 qgU
 qgU
+lqt
+lqt
+lqt
+uCR
+lqt
 qgU
 qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+uCR
+uCR
+lqt
+lqt
+lqt
 qgU
 hZh
 hZh
@@ -146149,7 +146156,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -146163,7 +146170,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 hZh
@@ -146406,7 +146413,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aoG
 apH
@@ -146420,7 +146427,7 @@ aoG
 apH
 aqJ
 qgU
-qgU
+lqt
 qgU
 qgU
 hZh
@@ -146663,11 +146670,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aoG
-apI
-aqJ
+lqt
 qgU
 aoG
 apI
@@ -146677,7 +146680,11 @@ aoG
 apI
 aqJ
 qgU
+aoG
+apI
+aqJ
 qgU
+uCR
 qgU
 qgU
 hZh
@@ -146920,11 +146927,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aoG
-apI
-aqJ
+lqt
 qgU
 aoG
 apI
@@ -146934,7 +146937,11 @@ aoG
 apI
 aqJ
 qgU
+aoG
+apI
+aqJ
 qgU
+lqt
 qgU
 qgU
 qgU
@@ -147177,11 +147184,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aoG
-apI
-aqJ
+lqt
 qgU
 aoG
 apI
@@ -147191,7 +147194,11 @@ aoG
 apI
 aqJ
 qgU
+aoG
+apI
+aqJ
 qgU
+lqt
 qgU
 qgU
 qgU
@@ -147431,10 +147438,10 @@ hZh
 hZh
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+lqt
+uCR
+lqt
 qgU
 aoG
 apI
@@ -147448,7 +147455,7 @@ aoG
 apI
 aqJ
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -147688,7 +147695,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -147945,7 +147952,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+uCR
 qgU
 alS
 aAP
@@ -148202,7 +148209,7 @@ hZh
 qgU
 qgU
 qgU
-qgU
+uCR
 qgU
 qgU
 qgU
@@ -148459,10 +148466,10 @@ hZh
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+lqt
+lqt
+lqt
 qgU
 aoG
 apL
@@ -148476,7 +148483,7 @@ aoG
 apL
 aqJ
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -148719,11 +148726,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aoG
-apL
-aqJ
+lqt
 qgU
 aoG
 apL
@@ -148733,7 +148736,11 @@ aoG
 apL
 aqJ
 qgU
+aoG
+apL
+aqJ
 qgU
+uCR
 qgU
 qgU
 qgU
@@ -148976,11 +148983,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aoG
-apL
-aqJ
+lqt
 qgU
 aoG
 apL
@@ -148990,7 +148993,11 @@ aoG
 apL
 aqJ
 qgU
+aoG
+apL
+aqJ
 qgU
+lqt
 qgU
 qgU
 aFp
@@ -149233,11 +149240,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aoG
-apL
-aqJ
+uCR
 qgU
 aoG
 apL
@@ -149247,7 +149250,11 @@ aoG
 apL
 aqJ
 qgU
+aoG
+apL
+aqJ
 qgU
+uCR
 qgU
 qgU
 aFq
@@ -149490,7 +149497,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aoG
 apM
@@ -149504,7 +149511,7 @@ aoG
 apM
 aqJ
 qgU
-qgU
+uCR
 qgU
 qgU
 aFq
@@ -149747,7 +149754,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -149761,7 +149768,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 aFq
@@ -150004,20 +150011,20 @@ qgU
 qgU
 qgU
 qgU
+lqt
+uCR
+lqt
+lqt
+lqt
 qgU
 qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+uCR
+lqt
+lqt
 qgU
 qgU
 qgU
@@ -150266,12 +150273,12 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+uCR
+lqt
+lqt
+uCR
+lqt
 qgU
 qgU
 qgU
@@ -157720,11 +157727,11 @@ aoM
 apP
 aqN
 alU
+afG
 alg
-alg
-avm
-alg
-arB
+aUK
+lTo
+oMw
 ayS
 avm
 alg
@@ -157978,9 +157985,9 @@ anO
 aqO
 alU
 alg
-aub
-arB
-alg
+afY
+avo
+avo
 axH
 ary
 aAb
@@ -158235,10 +158242,10 @@ apQ
 aqP
 alU
 asD
-ary
+ayS
 avo
 awm
-alg
+okk
 ayT
 aAb
 aBg
@@ -158749,7 +158756,7 @@ apS
 anR
 art
 asF
-alg
+afY
 avq
 alg
 axJ
@@ -171318,8 +171325,8 @@ adQ
 abi
 aeE
 aff
-afG
-afY
+ago
+ago
 ago
 ago
 ahc
@@ -171834,7 +171841,7 @@ aeF
 aeF
 aeF
 aeF
-oMw
+aeF
 aeF
 aeF
 aeF
@@ -172862,7 +172869,7 @@ aeF
 aeF
 aeF
 aeF
-lTo
+aeF
 aeF
 aeF
 aeF
@@ -173356,13 +173363,13 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+uCR
+uCR
+lqt
+uCR
+lqt
+lqt
+lqt
 qgU
 qgU
 qgU
@@ -173609,19 +173616,19 @@ qgU
 qgU
 qgU
 qgU
+lqt
+lqt
+uCR
+uCR
+uCR
 qgU
 qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+lqt
+uCR
 qgU
 qgU
 amy
@@ -173866,7 +173873,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+uCR
 qgU
 qgU
 qgU
@@ -174123,7 +174130,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+uCR
 qgU
 aag
 aah
@@ -174380,7 +174387,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aag
 aai
@@ -174637,7 +174644,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+uCR
 qgU
 aag
 aai
@@ -174894,7 +174901,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aag
 aai
@@ -175148,10 +175155,10 @@ hZh
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+lqt
+uCR
+lqt
 qgU
 aag
 aai
@@ -175405,7 +175412,7 @@ hZh
 qgU
 qgU
 qgU
-qgU
+uCR
 qgU
 qgU
 qgU
@@ -175662,7 +175669,7 @@ hZh
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aae
 aaf
@@ -175919,7 +175926,7 @@ hZh
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -176176,10 +176183,10 @@ hZh
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
+uCR
+lqt
+lqt
+uCR
 qgU
 aag
 aal
@@ -176193,7 +176200,7 @@ aag
 aal
 aan
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -176436,11 +176443,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aag
-aal
-aan
+lqt
 qgU
 aag
 aal
@@ -176450,7 +176453,11 @@ aag
 aal
 aan
 qgU
+aag
+aal
+aan
 qgU
+lqt
 qgU
 qgU
 qgU
@@ -176693,11 +176700,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aag
-aal
-aan
+lqt
 qgU
 aag
 aal
@@ -176707,7 +176710,11 @@ aag
 aal
 aan
 qgU
+aag
+aal
+aan
 qgU
+lqt
 qgU
 qgU
 qgU
@@ -176950,11 +176957,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-aag
-aal
-aan
+uCR
 qgU
 aag
 aal
@@ -176964,7 +176967,11 @@ aag
 aal
 aan
 qgU
+aag
+aal
+aan
 qgU
+uCR
 qgU
 qgU
 qgU
@@ -177207,7 +177214,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aag
 aam
@@ -177221,7 +177228,7 @@ aag
 aam
 aan
 qgU
-qgU
+lqt
 qgU
 qgU
 aaa
@@ -177464,7 +177471,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 qgU
 qgU
@@ -177478,7 +177485,7 @@ qgU
 qgU
 qgU
 qgU
-qgU
+lqt
 qgU
 aaa
 aaa
@@ -177721,21 +177728,21 @@ qgU
 qgU
 qgU
 qgU
+lqt
+lqt
+uCR
+lqt
+lqt
 qgU
 qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+uCR
+lqt
+lqt
+lqt
 qgU
 qgU
 qgU
@@ -177982,13 +177989,13 @@ qgU
 qgU
 qgU
 qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
-qgU
+lqt
+uCR
+lqt
+lqt
+lqt
+uCR
+lqt
 qgU
 qgU
 qgU
@@ -186010,7 +186017,7 @@ qgU
 qgU
 alC
 bAN
-aUK
+bbt
 aWs
 aXT
 aZJ
@@ -186853,7 +186860,7 @@ qgU
 qgU
 qgU
 aaa
-hZh
+aaa
 aaa
 aaa
 aaa
@@ -187110,7 +187117,7 @@ qgU
 qgU
 qgU
 aaa
-tNT
+sXf
 aaa
 aaa
 aaa
