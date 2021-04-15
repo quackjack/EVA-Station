@@ -1,0 +1,9 @@
+"a" = (/turf/open/floor/engine,/area/space)
+"o" = (/obj/docking_port/mobile/elevator{dir = 4; height = 3; id = "iceoutpost_elevatorcenter"; name = "Starboard Elevator"; width = 3},/turf/open/floor/engine,/area/space)
+"G" = (/obj/machinery/computer/shuttle{dir = 8; no_destination_swap = 1; possible_destinations = "iceoutpost_elevatorcenter;iceoutpost_elevatorup;iceoutpost_elevatordown"; shuttleId = "iceoutpost_elevatorcenter"},/turf/open/floor/engine,/area/space)
+
+(1,1,1) = {"
+aaa
+oaG
+aaa
+"}

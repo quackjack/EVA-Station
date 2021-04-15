@@ -7856,12 +7856,17 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "arP" = (
-/obj/machinery/vending/snack/random,
 /obj/item/radio/intercom{
 	name = "Station Intercom";
 	pixel_y = 26
 	},
 /obj/effect/turf_decal/bot,
+/obj/machinery/vending/sustenance{
+	contraband = list(/obj/item/reagent_containers/food/drinks/coffee = 4, /obj/item/tank/internals/emergency_oxygen = 2, /obj/item/clothing/mask/breath = 2);
+	desc = "A vending machine which vends cheap food, as required by section 47-C of the NT's Crew Ethical Treatment Agreement.";
+	name = "\improper Crew Sustenance Vendor";
+	products = list(/obj/item/reagent_containers/food/snacks/tofu = 6, /obj/item/reagent_containers/food/drinks/ice/sustanance = 4, /obj/item/reagent_containers/food/snacks/candy_corn = 2)
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "arQ" = (
@@ -44564,7 +44569,6 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bAW" = (
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -44574,6 +44578,12 @@
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
+	},
+/obj/machinery/vending/sustenance{
+	contraband = list(/obj/item/reagent_containers/food/drinks/coffee = 4, /obj/item/tank/internals/emergency_oxygen = 2, /obj/item/clothing/mask/breath = 2);
+	desc = "A vending machine which vends cheap food, as required by section 47-C of the NT's Crew Ethical Treatment Agreement.";
+	name = "\improper Crew Sustenance Vendor";
+	products = list(/obj/item/reagent_containers/food/snacks/tofu = 6, /obj/item/reagent_containers/food/drinks/ice/sustanance = 4, /obj/item/reagent_containers/food/snacks/candy_corn = 2)
 	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
@@ -77323,6 +77333,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/restrooms)
 "cAo" = (
@@ -78247,6 +78258,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/restrooms)
 "cBN" = (
@@ -79366,6 +79378,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/restrooms)
 "cDt" = (
@@ -80381,6 +80394,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/restrooms)
 "cFh" = (
@@ -81210,23 +81224,24 @@
 /turf/open/floor/plasteel,
 /area/gateway)
 "cGH" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/mirror{
-	pixel_x = -26
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
 	},
-/obj/structure/sink{
-	dir = 8;
-	pixel_x = -12
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/disposalpipe/sorting/mail{
+	dir = 4;
+	name = "Medbay Junction";
+	sortType = 9
 	},
-/obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
-/area/crew_quarters/toilet/restrooms)
+/area/hallway/primary/central)
 "cGI" = (
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/tile/neutral,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/restrooms)
 "cGJ" = (
@@ -81907,24 +81922,17 @@
 "cHU" = (
 /turf/closed/wall,
 /area/maintenance/starboard/aft)
-"cHV" = (
-/obj/effect/decal/cleanable/cobweb,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
-"cHW" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
-"cHX" = (
-/obj/structure/mopbucket,
-/obj/item/mop,
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
 "cHY" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/closed/wall,
-/area/crew_quarters/toilet/restrooms)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment,
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/camera{
+	c_tag = "Central Hallway - Aft Starboard";
+	dir = 8;
+	name = "hallway camera"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "cHZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/white{
@@ -81932,6 +81940,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/tile/neutral,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/restrooms)
 "cIa" = (
@@ -82347,30 +82356,13 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "cIU" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/camera{
-	c_tag = "Central Hallway - Aft Starboard";
-	dir = 8;
-	name = "hallway camera"
-	},
 /obj/effect/turf_decal/tile/neutral,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"cIV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
-	heat_capacity = 1e+006
-	},
-/area/maintenance/starboard/aft)
 "cIW" = (
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
@@ -82398,6 +82390,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
 "cJa" = (
@@ -83566,28 +83559,10 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "cKF" = (
-/obj/structure/disposalpipe/sorting/mail{
-	dir = 1;
-	name = "Medbay Junction";
-	sortType = 9
-	},
 /obj/effect/turf_decal/tile/neutral,
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"cKG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard/aft)
 "cKH" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -83600,36 +83575,16 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
-"cKJ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
-"cKK" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
-"cKL" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/closed/wall,
-/area/maintenance/starboard/aft)
 "cKM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/white{
 	icon_state = "1-4"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -84430,6 +84385,12 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/tile/neutral,
+/obj/machinery/computer/shuttle{
+	dir = 8;
+	no_destination_swap = 1;
+	possible_destinations = "iceoutpost_elevatorcenter;iceoutpost_elevatorup;iceoutpost_elevatordown";
+	shuttleId = "iceoutpost_elevatorcenter"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "cMf" = (
@@ -84448,26 +84409,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/closed/wall,
 /area/crew_quarters/toilet/restrooms)
-"cMi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/maintenance/starboard/aft)
-"cMj" = (
-/turf/open/space/basic,
-/area/maintenance/starboard/aft)
 "cMk" = (
-/turf/open/floor/plating,
-/area/crew_quarters/toilet/restrooms)
+/turf/open/floor/plasteel/elevatorshaft,
+/area/maintenance/starboard/aft)
 "cMl" = (
 /obj/structure/cable/white{
 	icon_state = "4-8"
@@ -85219,30 +85163,15 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "cNF" = (
-/obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "cNG" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall,
+/turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
 "cNH" = (
 /obj/effect/landmark/event_spawn,
-/turf/closed/wall,
-/area/maintenance/starboard/aft)
-"cNI" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/turf/closed/wall,
+/turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cNJ" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -87297,12 +87226,17 @@
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/dorms)
 "cRw" = (
-/obj/machinery/vending/snack/random,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -26
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/delivery,
+/obj/machinery/vending/sustenance{
+	contraband = list(/obj/item/reagent_containers/food/drinks/coffee = 4, /obj/item/tank/internals/emergency_oxygen = 2, /obj/item/clothing/mask/breath = 2);
+	desc = "A vending machine which vends cheap food, as required by section 47-C of the NT's Crew Ethical Treatment Agreement.";
+	name = "\improper Crew Sustenance Vendor";
+	products = list(/obj/item/reagent_containers/food/snacks/tofu = 6, /obj/item/reagent_containers/food/drinks/ice/sustanance = 4, /obj/item/reagent_containers/food/snacks/candy_corn = 2)
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
 "cRx" = (
@@ -122245,8 +122179,13 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/delivery,
+/obj/machinery/vending/sustenance{
+	contraband = list(/obj/item/reagent_containers/food/drinks/coffee = 4, /obj/item/tank/internals/emergency_oxygen = 2, /obj/item/clothing/mask/breath = 2);
+	desc = "A vending machine which vends cheap food, as required by section 47-C of the NT's Crew Ethical Treatment Agreement.";
+	name = "\improper Crew Sustenance Vendor";
+	products = list(/obj/item/reagent_containers/food/snacks/tofu = 6, /obj/item/reagent_containers/food/drinks/ice/sustanance = 4, /obj/item/reagent_containers/food/snacks/candy_corn = 2)
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "ebl" = (
@@ -125476,6 +125415,17 @@
 /obj/machinery/door/airlock/research/glass/incinerator/toxmix_interior,
 /turf/open/floor/engine,
 /area/science/mixing)
+"fqA" = (
+/obj/docking_port/stationary{
+	dir = 4;
+	dwidth = 3;
+	height = 3;
+	id = "iceoutpost_elevator";
+	name = "Starboard Elevator";
+	width = 3
+	},
+/turf/open/floor/plasteel/elevatorshaft,
+/area/maintenance/starboard/aft)
 "fAu" = (
 /obj/structure/window/reinforced,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -126012,6 +125962,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
+"iCY" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "iIl" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -126789,6 +126746,10 @@
 	dir = 1
 	},
 /area/science/circuit)
+"mag" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "mkm" = (
 /obj/machinery/atmospherics/components/binary/valve,
 /obj/machinery/embedded_controller/radio/airlock_controller/incinerator_toxmix{
@@ -127085,8 +127046,7 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "osd" = (
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
-/turf/open/floor/plating,
+/turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
 "osD" = (
 /obj/structure/lattice/catwalk,
@@ -127153,6 +127113,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
+"oMQ" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/firedoor,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "oNd" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
@@ -127608,6 +127574,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"rIU" = (
+/obj/machinery/door/firedoor,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "rPK" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/tile/neutral{
@@ -172650,7 +172621,7 @@ cyH
 bvH
 ccT
 cIY
-bvH
+cHY
 cik
 bvH
 cIU
@@ -172908,12 +172879,12 @@ cAm
 cAm
 cAm
 cAm
-cAm
 cHU
-cMj
-cKG
+rIU
+rIU
+oMQ
 cHU
-cHU
+iCY
 cMf
 cRc
 cRc
@@ -173165,12 +173136,12 @@ cAm
 cBH
 cDn
 cFb
-cAm
-cHV
-cIV
-cKK
-cIW
-cNG
+cHU
+cMk
+fqA
+cMk
+cHU
+mag
 cPz
 cRd
 cSM
@@ -173422,12 +173393,12 @@ cAm
 cBI
 cDo
 cFc
-cAm
-cHW
-cIW
-cKJ
-cIW
 cHU
+cMk
+cMk
+cMk
+cHU
+cIW
 cPA
 cRd
 cSN
@@ -173679,11 +173650,11 @@ cAm
 cBJ
 cDp
 cFd
-cAm
-cHX
-cIX
-cKJ
-cMi
+cHU
+cMk
+cMk
+cMk
+cHU
 cNH
 cPB
 cRd
@@ -173936,12 +173907,12 @@ cAm
 cBK
 cDq
 cFe
-cAm
-cAm
-cMk
-cKK
-cIW
-cNG
+cHU
+cHU
+cHU
+cHU
+cHU
+mag
 cPC
 cRd
 cRc
@@ -174193,12 +174164,12 @@ cAm
 cBL
 cDr
 cFf
-cGH
-cHY
-cAm
-cKL
+osd
+cNG
 cHU
-cNI
+mag
+cIW
+cIW
 cRn
 cPy
 cSP
@@ -174445,7 +174416,7 @@ csN
 cbk
 cvN
 cxa
-bsE
+cGH
 cAn
 cBM
 cDs
@@ -174711,7 +174682,7 @@ cMh
 cMh
 cMh
 cMl
-osd
+cRm
 dfV
 dLq
 cPy
