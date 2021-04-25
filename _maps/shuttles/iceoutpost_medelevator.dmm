@@ -1,0 +1,8 @@
+"a" = (/obj/machinery/computer/shuttle{dir = 4; no_destination_swap = 1; possible_destinations = "iceoutpost_medelevatorupper;iceoutpost_medelevatorlower"; shuttleId = "iceoutpost_elevatorcenter"},/turf/open/floor/engine,/area/space)
+"j" = (/obj/docking_port/mobile/elevator{dir = 2; height = 2; id = "iceoutpost_medelevatorupper"; name = "Medical Elevator"; width = 3},/turf/open/floor/engine,/area/space)
+"N" = (/turf/open/floor/engine,/area/space)
+
+(1,1,1) = {"
+NjN
+aNN
+"}
